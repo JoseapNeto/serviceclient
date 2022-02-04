@@ -41,10 +41,8 @@ public class ClienteService {
 
     //DeleteById
     public void deleteClienteById(Integer id){
-         clienteRepository.findById(id).map(ClienteEntity -> {
-             clienteRepository.delete(ClienteEntity);
-             return Void.TYPE;
-         }).orElseThrow(() ->
+         clienteRepository.findById(id).map(ClienteEntity -> {clienteRepository.delete(ClienteEntity);
+             return Void.TYPE;}).orElseThrow(() ->
                  new ResponseStatusException(HttpStatus.NOT_FOUND,"Cliente não encontrado"));
      }
 
@@ -53,8 +51,7 @@ public class ClienteService {
             ClienteEntity.setNome(cliente.getNome());
             ClienteEntity.setCpf(cliente.getCpf());
             clienteRepository.save(ClienteEntity);
-         return Void.TYPE;
-        }).orElseThrow(() ->
+         return Void.TYPE;}).orElseThrow(() ->
                 new ResponseStatusException(HttpStatus.NOT_FOUND,"Cliente não encontrado"));
     }
 
