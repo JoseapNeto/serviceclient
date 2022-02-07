@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/clientes")
-//@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://angularheroku2.herokuapp.com/")
 public class ClienteResource {
 
 

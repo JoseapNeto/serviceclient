@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/address")
-//@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://angularheroku2.herokuapp.com/")
 public class ServicoResource {
 
     @Autowired
