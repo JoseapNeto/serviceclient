@@ -22,7 +22,7 @@ public class ClienteResource {
     @Autowired
     ClienteService clienteService;
 
-
+//
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<ClienteEntity> insert(@RequestBody @Validated ClienteEntity cliente){
