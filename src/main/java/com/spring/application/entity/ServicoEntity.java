@@ -10,7 +10,7 @@ import java.time.LocalDate;
 
 @Entity
 @Data
-public class ServicoEntity {
+public class ServicoEntity implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
