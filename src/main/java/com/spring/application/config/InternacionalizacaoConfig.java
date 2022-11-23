@@ -13,7 +13,7 @@ import java.util.Locale;
 @Configuration
 public class InternacionalizacaoConfig {
 
-
+/*
     @Bean
     public MessageSource messageSource(){
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
@@ -29,4 +29,6 @@ public class InternacionalizacaoConfig {
         bean.setValidationMessageSource(messageSource());
         return bean;
     }
+
+ */
 }
